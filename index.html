@@ -39,23 +39,23 @@ body{font-family:'Outfit',sans-serif;background:var(--bg);color:var(--text);font
 #app{display:flex;flex-direction:column;height:100vh;height:100dvh;}
 
 /* ── Header ── */
-.header{background:var(--white);padding:48px 16px 0;flex-shrink:0;box-shadow:var(--shadow-sm);}
-.header-top{display:flex;align-items:center;justify-content:space-between;padding-bottom:8px;gap:10px;}
-.app-title{font-size:18px;font-weight:700;color:var(--text);letter-spacing:-0.5px;}
+.header{background:var(--white);padding:52px 18px 10px;flex-shrink:0;box-shadow:var(--shadow-sm);}
+.header-top{display:flex;align-items:center;justify-content:space-between;padding-bottom:10px;gap:10px;}
+.app-title{font-size:24px;font-weight:700;color:var(--text);letter-spacing:-0.5px;line-height:1;}
 .header-actions{display:flex;gap:8px;align-items:center;}
 .icon-btn{width:34px;height:34px;border-radius:50%;border:none;background:var(--bg);color:var(--text2);font-size:16px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-family:'Outfit',sans-serif;}
 .icon-btn:active{background:var(--border);}
 
 /* Trip pills */
-.trip-scroll{display:flex;gap:6px;overflow-x:auto;padding:8px 8px 8px 0;scrollbar-width:none;flex:1;}
-.trip-scroll::-webkit-scrollbar{display:none;}
-.trip-pill{padding:5px 13px;border-radius:99px;border:1.5px solid var(--border);background:transparent;color:var(--text2);font-size:12px;font-weight:500;font-family:'Outfit',sans-serif;cursor:pointer;white-space:nowrap;transition:all .15s;flex-shrink:0;}
-.trip-pill.on{background:var(--accent);color:white;border-color:var(--accent);}
+
+
+
+
 
 /* ── Member bar ── */
 .member-bar{background:var(--white);display:flex;gap:8px;padding:10px 14px;flex-shrink:0;border-top:1px solid var(--border);overflow-x:auto;scrollbar-width:none;}
 .member-bar::-webkit-scrollbar{display:none;}
-.mem-chip{flex:1;min-width:72px;display:flex;flex-direction:column;gap:5px;padding:9px 10px;border-radius:12px;border:1.5px solid var(--border);background:var(--white);cursor:pointer;transition:all .2s;position:relative;overflow:hidden;}
+.mem-chip{flex:1;min-width:72px;display:flex;flex-direction:column;gap:5px;padding:9px 10px;border-radius:0;border:1.5px solid var(--border);background:var(--white);cursor:pointer;transition:all .2s;position:relative;overflow:hidden;}
 .mem-chip.on{border-color:var(--accent);background:var(--accent-bg);}
 .mem-chip.complete{border-color:var(--green);background:var(--green-bg);}
 @keyframes chipPop{0%{transform:scale(1)}40%{transform:scale(1.04)}100%{transform:scale(1)}}
@@ -66,47 +66,47 @@ body{font-family:'Outfit',sans-serif;background:var(--bg);color:var(--text);font
 .mem-pct{font-size:10px;font-weight:700;color:var(--text3);flex-shrink:0;}
 .mem-chip.on .mem-pct{color:var(--accent);}
 .mem-chip.complete .mem-pct{color:var(--green);}
-.mem-mini-track{height:4px;background:var(--border);border-radius:99px;overflow:hidden;}
-.mem-mini-fill{height:4px;border-radius:99px;transition:width .5s cubic-bezier(.4,0,.2,1);}
-.add-mem{width:44px;flex-shrink:0;display:flex;align-items:center;justify-content:center;border-radius:12px;border:1.5px dashed var(--border2);background:transparent;color:var(--text3);font-size:20px;cursor:pointer;}
+.mem-mini-track{height:4px;background:var(--border);border-radius:0;overflow:hidden;}
+.mem-mini-fill{height:4px;border-radius:0;transition:width .5s cubic-bezier(.4,0,.2,1);}
+.add-mem{width:44px;flex-shrink:0;display:flex;align-items:center;justify-content:center;border-radius:0;border:1.5px dashed var(--border2);background:transparent;color:var(--text3);font-size:20px;cursor:pointer;}
 .add-mem:active{background:var(--accent-bg);}
 @keyframes confettiFly{0%{transform:translateY(0) rotate(0deg);opacity:1}100%{transform:translateY(-120px) rotate(720deg);opacity:0}}
-.confetti-piece{position:fixed;width:8px;height:8px;border-radius:2px;pointer-events:none;z-index:999;animation:confettiFly .9s ease-out forwards;}
+.confetti-piece{position:fixed;width:8px;height:8px;border-radius:0;pointer-events:none;z-index:999;animation:confettiFly .9s ease-out forwards;}
 
 
 
 /* ── Scroll area ── */
-.scroll-area{flex:1;overflow-y:auto;padding:10px 14px 90px;scrollbar-width:none;display:flex;flex-direction:column;gap:8px;}
+.scroll-area{flex:1;overflow-y:auto;padding:8px 14px 90px;scrollbar-width:none;display:flex;flex-direction:column;gap:6px;}
 .scroll-area::-webkit-scrollbar{display:none;}
 
 /* ── Category card ── */
-.cat-card{background:var(--card);border-radius:16px;overflow:visible;box-shadow:var(--shadow-card);}
-.cat-hdr{display:flex;align-items:center;gap:8px;padding:10px 14px;cursor:pointer;}
-.cat-icon{width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:13px;flex-shrink:0;}
+.cat-card{background:var(--card);border-radius:0;overflow:visible;box-shadow:var(--shadow-card);}
+.cat-hdr{display:flex;align-items:center;gap:8px;padding:7px 14px;}
+.cat-icon{width:22px;height:22px;border-radius:0;display:flex;align-items:center;justify-content:center;font-size:11px;flex-shrink:0;}
 .cat-info{flex:1;min-width:0;}
 .cat-name{font-size:14px;font-weight:600;color:var(--text);}
-.cat-sub{font-size:11px;color:var(--text3);margin-top:1px;}
-.cat-badge{font-size:11px;font-weight:700;padding:3px 9px;border-radius:99px;flex-shrink:0;}
-.cat-badge.todo{background:var(--bg);color:var(--text2);}
-.cat-badge.done{background:var(--green-bg);color:var(--green);}
-.cat-chevron{font-size:11px;color:var(--text3);transition:transform .2s;flex-shrink:0;}
-.cat-chevron.open{transform:rotate(90deg);}
+
+
+
+
+
+
 
 /* Item rows */
-.items-wrap{border-top:1px solid var(--border);border-radius:0 0 16px 16px;overflow:hidden;}
-.item-row{display:flex;align-items:center;gap:10px;padding:11px 14px;border-bottom:1px solid var(--bg);cursor:pointer;background:var(--white);user-select:none;transition:background .1s;}
+.items-wrap{border-top:1px solid var(--border);border-radius:0;overflow:hidden;}
+.item-row{display:flex;align-items:center;gap:10px;padding:8px 14px;border-bottom:1px solid var(--bg);cursor:pointer;background:var(--white);user-select:none;transition:background .1s;}
 .item-row:last-of-type{border-bottom:none;}
 .item-row:active{background:#fafaf8;}
 .item-row.done{background:#fdfdfb;}
 .item-row.done .item-text{text-decoration:line-through;color:var(--text3);}
-.chk{width:24px;height:24px;border-radius:50%;border:2px solid var(--border2);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .15s;background:var(--white);}
+.chk{width:20px;height:20px;border-radius:0;border:2px solid var(--border2);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .15s;background:var(--white);}
 .item-row.done .chk{background:var(--green);border-color:var(--green);}
-.chk-mark{display:none;color:white;font-size:13px;font-weight:700;}
+.chk-mark{display:none;color:white;font-size:11px;font-weight:700;}
 .item-row.done .chk-mark{display:block;}
 .item-body{flex:1;min-width:0;}
-.item-text{font-size:13px;font-weight:500;color:var(--text);line-height:1.3;}
+.item-text{font-size:13px;font-weight:500;color:var(--text);line-height:1.2;}
 .item-qty{font-size:11px;font-weight:600;color:var(--accent);margin-top:2px;}
-.must-badge{font-size:10px;font-weight:700;padding:2px 7px;border-radius:99px;background:var(--red-bg);color:var(--red);flex-shrink:0;}
+.must-badge{font-size:10px;font-weight:700;padding:2px 7px;border-radius:0;background:var(--red-bg);color:var(--red);flex-shrink:0;}
 .del-btn{width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:none;border:none;color:var(--text3);font-size:16px;cursor:pointer;flex-shrink:0;}
 .del-btn:active{background:var(--red-bg);color:var(--red);}
 
@@ -120,28 +120,27 @@ body{font-family:'Outfit',sans-serif;background:var(--bg);color:var(--text);font
 .cat-add-btn:active{background:var(--accent-bg);border-color:var(--accent);color:var(--accent);}
 .add-popup-bg{display:none;position:fixed;inset:0;z-index:150;background:rgba(0,0,0,0.3);}
 .add-popup-bg.show{display:flex;align-items:flex-end;}
-.add-popup{background:var(--white);border-radius:20px 20px 0 0;padding:20px 16px;padding-bottom:max(20px,env(safe-area-inset-bottom));width:100%;}
+.add-popup{background:var(--white);border-radius:0;padding:20px 16px;padding-bottom:max(20px,env(safe-area-inset-bottom));width:100%;}
 .add-popup-title{font-size:14px;font-weight:600;color:var(--text);margin-bottom:12px;}
 .add-popup-row{display:flex;gap:8px;align-items:center;}
-.add-popup-inp{flex:1;background:var(--bg);border:1.5px solid var(--border);border-radius:10px;padding:12px 14px;font-family:'Outfit',sans-serif;font-size:15px;color:var(--text);outline:none;}
+.add-popup-inp{flex:1;background:var(--bg);border:1.5px solid var(--border);border-radius:0;padding:12px 14px;font-family:'Outfit',sans-serif;font-size:15px;color:var(--text);outline:none;}
 .add-popup-inp:focus{border-color:var(--accent);}
 .add-popup-inp::placeholder{color:var(--text3);}
-.add-popup-ok{padding:12px 20px;border-radius:10px;background:var(--accent);border:none;color:white;font-size:14px;font-weight:600;font-family:'Outfit',sans-serif;cursor:pointer;white-space:nowrap;}
+.add-popup-ok{padding:12px 20px;border-radius:0;background:var(--accent);border:none;color:white;font-size:14px;font-weight:600;font-family:'Outfit',sans-serif;cursor:pointer;white-space:nowrap;}
 
 /* ── Bottom bar ── */
-.bottom-bar{position:fixed;bottom:0;left:0;right:0;padding:10px 16px;padding-bottom:max(10px,env(safe-area-inset-bottom));background:var(--white);border-top:1px solid var(--border);display:flex;gap:8px;box-shadow:0 -2px 12px rgba(0,0,0,0.06);}
-.bb-btn{flex:1;padding:13px;border-radius:12px;border:1.5px solid var(--border);background:var(--white);color:var(--text2);font-family:'Outfit',sans-serif;font-size:13px;font-weight:500;cursor:pointer;}
-.bb-btn.pri{background:var(--accent);color:white;border-color:var(--accent);font-weight:600;}
-.bb-btn.danger{color:var(--red);border-color:transparent;background:var(--red-bg);}
+.bottom-bar{position:fixed;bottom:0;left:0;right:0;padding:10px 16px;padding-bottom:max(10px,env(safe-area-inset-bottom));background:transparent;pointer-events:none;}
+.bb-btn{width:100%;padding:14px;border-radius:0;border:none;background:var(--accent);color:white;font-family:'Outfit',sans-serif;font-size:15px;font-weight:600;cursor:pointer;box-shadow:0 4px 16px rgba(45,91,227,0.3);pointer-events:all;}
+.bb-btn:active{background:#2450c8;}
 
 /* ── Modals ── */
 .modal-bg{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.35);z-index:100;align-items:flex-end;}
 .modal-bg.show{display:flex;}
-.modal{background:var(--white);border-radius:24px 24px 0 0;padding:20px 20px;padding-bottom:max(24px,env(safe-area-inset-bottom));width:100%;max-height:82vh;overflow-y:auto;}
-.modal-handle{width:36px;height:4px;border-radius:99px;background:var(--border2);margin:0 auto 18px;}
+.modal{background:var(--white);border-radius:0;padding:20px 20px;padding-bottom:max(24px,env(safe-area-inset-bottom));width:100%;max-height:82vh;overflow-y:auto;}
+.modal-handle{width:36px;height:4px;border-radius:0;background:var(--border2);margin:0 auto 18px;}
 .modal-title{font-size:18px;font-weight:700;margin-bottom:18px;color:var(--text);}
 .modal-label{font-size:11px;font-weight:600;color:var(--text2);margin-bottom:6px;text-transform:uppercase;letter-spacing:0.06em;}
-.modal-inp{width:100%;background:var(--bg);border:1.5px solid var(--border);border-radius:12px;padding:13px 14px;font-family:'Outfit',sans-serif;font-size:16px;color:var(--text);outline:none;margin-bottom:16px;}
+.modal-inp{width:100%;background:var(--bg);border:1.5px solid var(--border);border-radius:0;padding:13px 14px;font-family:'Outfit',sans-serif;font-size:16px;color:var(--text);outline:none;margin-bottom:16px;}
 .modal-inp:focus{border-color:var(--accent);background:var(--white);}
 .color-row{display:flex;gap:10px;margin-bottom:16px;flex-wrap:wrap;}
 .cswatch{width:36px;height:36px;border-radius:50%;cursor:pointer;border:3px solid transparent;transition:border .12s;}
@@ -150,44 +149,57 @@ body{font-family:'Outfit',sans-serif;background:var(--bg);color:var(--text);font
 .modal-check label{font-size:15px;color:var(--text);cursor:pointer;display:flex;align-items:center;gap:10px;width:100%;}
 .modal-check input{width:20px;height:20px;accent-color:var(--accent);}
 .modal-btns{display:flex;gap:8px;margin-top:18px;}
-.modal-btn{flex:1;padding:14px;border-radius:12px;border:1.5px solid var(--border);background:var(--bg);color:var(--text);font-family:'Outfit',sans-serif;font-size:15px;font-weight:500;cursor:pointer;}
+.modal-btn{flex:1;padding:14px;border-radius:0;border:1.5px solid var(--border);background:var(--bg);color:var(--text);font-family:'Outfit',sans-serif;font-size:15px;font-weight:500;cursor:pointer;}
 .modal-btn.pri{background:var(--accent);color:white;border-color:var(--accent);font-weight:600;}
 .modal-btn.danger{color:var(--red);border-color:var(--red-bg);background:var(--red-bg);}
 
+
+/* Settings modal */
+.settings-item{display:flex;align-items:center;justify-content:space-between;padding:14px 0;border-bottom:1px solid var(--border);}
+.settings-item:last-of-type{border-bottom:none;}
+.settings-label{font-size:15px;font-weight:500;color:var(--text);}
+.settings-sub{font-size:12px;color:var(--text3);margin-top:2px;}
+.settings-days{display:flex;align-items:center;gap:8px;}
+.settings-days-btn{width:32px;height:32px;border-radius:50%;border:1.5px solid var(--border2);background:var(--white);color:var(--text);font-size:16px;display:flex;align-items:center;justify-content:center;cursor:pointer;}
+.settings-days-btn:active{background:var(--accent-bg);}
+.settings-days-num{min-width:28px;text-align:center;font-size:16px;font-weight:700;color:var(--text);}
+.settings-btn{padding:9px 18px;border-radius:0;border:1.5px solid var(--border);background:var(--bg);color:var(--text);font-family:'Outfit',sans-serif;font-size:14px;font-weight:500;cursor:pointer;}
+.settings-btn.danger{color:var(--red);border-color:var(--red-bg);background:var(--red-bg);}
+.settings-btn:active{opacity:.8;}
+
+.trip-pill{padding:7px 16px;border-radius:0;border:1.5px solid var(--border);background:transparent;color:var(--text2);font-size:13px;font-weight:500;font-family:'Outfit',sans-serif;cursor:pointer;white-space:nowrap;transition:all .15s;}
+.trip-pill.on{background:var(--accent);color:white;border-color:var(--accent);}
 /* Trip editor */
 .trip-edit-item{display:flex;align-items:center;gap:10px;padding:13px 0;border-bottom:1px solid var(--border);}
 .trip-edit-name{flex:1;font-size:15px;font-weight:500;color:var(--text);}
 .trip-del-btn{width:32px;height:32px;border-radius:50%;background:var(--bg);border:none;color:var(--text3);font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;}
 .trip-del-btn:active{background:var(--red-bg);color:var(--red);}
 .add-trip-row{display:flex;gap:8px;margin-top:16px;}
-.add-trip-inp{flex:1;background:var(--bg);border:1.5px solid var(--border);border-radius:12px;padding:12px 14px;font-family:'Outfit',sans-serif;font-size:15px;color:var(--text);outline:none;}
+.add-trip-inp{flex:1;background:var(--bg);border:1.5px solid var(--border);border-radius:0;padding:12px 14px;font-family:'Outfit',sans-serif;font-size:15px;color:var(--text);outline:none;}
 .add-trip-inp:focus{border-color:var(--accent);}
-.add-trip-btn{background:var(--accent);border:none;border-radius:12px;color:white;font-size:14px;font-weight:600;font-family:'Outfit',sans-serif;padding:0 18px;cursor:pointer;}
+.add-trip-btn{background:var(--accent);border:none;border-radius:0;color:white;font-size:14px;font-weight:600;font-family:'Outfit',sans-serif;padding:0 18px;cursor:pointer;}
 
 /* Context menu */
 .ctx-ov{display:none;position:fixed;inset:0;z-index:199;}
 .ctx-ov.show{display:block;}
-.ctx-menu{display:none;position:fixed;z-index:200;background:var(--white);border-radius:14px;border:1px solid var(--border);box-shadow:0 8px 30px rgba(0,0,0,0.15);overflow:hidden;min-width:170px;}
+.ctx-menu{display:none;position:fixed;z-index:200;background:var(--white);border-radius:0;border:1px solid var(--border);box-shadow:0 8px 30px rgba(0,0,0,0.15);overflow:hidden;min-width:170px;}
 .ctx-menu.show{display:block;}
 .ctx-item{padding:14px 18px;font-size:15px;cursor:pointer;display:flex;align-items:center;gap:10px;}
 .ctx-item:active{background:var(--bg);}
 .ctx-item.danger{color:var(--red);}
 
 /* Days row */
-.trip-row{display:flex;align-items:center;border-top:1px solid var(--border);padding-bottom:8px;}
-.days-inline{display:flex;align-items:center;gap:5px;padding:0 12px 0 6px;flex-shrink:0;border-left:1px solid var(--border);}
+
 .days-label{font-size:12px;color:var(--text2);}
 .days-btn{width:24px;height:24px;border-radius:50%;border:1.5px solid var(--border2);background:var(--white);color:var(--text);font-size:14px;display:flex;align-items:center;justify-content:center;cursor:pointer;}
 .days-btn:active{background:var(--accent-bg);}
 .days-num{min-width:24px;text-align:center;font-size:14px;font-weight:700;color:var(--text);}
 .days-unit{font-size:12px;color:var(--text2);}
-.save-pill{margin-left:auto;display:flex;align-items:center;gap:4px;padding:3px 8px;border-radius:99px;background:var(--bg);border:1px solid var(--border);}
 .save-dot{width:6px;height:6px;border-radius:50%;background:var(--text3);}
 .save-dot.saved{background:var(--green);}
-.save-txt{font-size:10px;color:var(--text3);}
 
 /* Toast */
-.toast{position:fixed;bottom:90px;left:50%;transform:translateX(-50%) translateY(10px);background:var(--text);color:white;padding:11px 22px;border-radius:99px;font-size:14px;font-weight:500;opacity:0;transition:all .22s;pointer-events:none;white-space:nowrap;z-index:50;}
+.toast{position:fixed;bottom:90px;left:50%;transform:translateX(-50%) translateY(10px);background:var(--text);color:white;padding:11px 22px;border-radius:0;font-size:14px;font-weight:500;opacity:0;transition:all .22s;pointer-events:none;white-space:nowrap;z-index:50;}
 .toast.show{opacity:1;transform:translateX(-50%) translateY(0);}
 
 /* Category icon colors */
@@ -203,23 +215,8 @@ body{font-family:'Outfit',sans-serif;background:var(--bg);color:var(--text);font
 <div id="app">
   <div class="header">
     <div class="header-top">
-      <div class="app-title">Tabigo</div>
-      <div class="header-actions">
-        <div class="save-pill">
-          <div class="save-dot" id="saveDot"></div>
-          <span class="save-txt" id="saveTxt">未保存</span>
-        </div>
-        <button class="icon-btn" onclick="openTripModal()" title="リスト編集">≡</button>
-      </div>
-    </div>
-    <div class="trip-row">
-      <div class="trip-scroll" id="tripScroll"></div>
-      <div class="days-inline">
-        <button class="days-btn" onclick="changeDays(-1)">−</button>
-        <span class="days-num" id="daysNum">2</span>
-        <button class="days-btn" onclick="changeDays(1)">+</button>
-        <span class="days-unit">泊</span>
-      </div>
+      <div class="app-title"><span style="color:var(--accent)">T</span>abigo</div>
+      <button class="icon-btn" onclick="openSettingsModal()" title="設定">⚙</button>
     </div>
   </div>
 
@@ -228,7 +225,50 @@ body{font-family:'Outfit',sans-serif;background:var(--bg);color:var(--text);font
 
   <div class="scroll-area" id="scrollArea"></div>
 
-  <!-- Add item popup -->
+  <!-- Settings modal -->
+  <div class="modal-bg" id="settingsModalBg" onclick="bgClick('settingsModalBg',event)">
+    <div class="modal">
+      <div class="modal-handle"></div>
+      <div class="modal-title">設定</div>
+
+      <div class="settings-item">
+        <div>
+          <div class="settings-label">旅行日数</div>
+          <div class="settings-sub">着替えなどの枚数に反映されます</div>
+        </div>
+        <div class="settings-days">
+          <button class="settings-days-btn" onclick="changeDays(-1)">−</button>
+          <span class="settings-days-num" id="daysNum">2</span>
+          <button class="settings-days-btn" onclick="changeDays(1)">+</button>
+          <span style="font-size:13px;color:var(--text2)">泊</span>
+        </div>
+      </div>
+
+
+
+      <div class="settings-item">
+        <div>
+          <div class="settings-label">前回のリストを読み込む</div>
+          <div class="settings-sub">保存済みのチェック状態を復元</div>
+        </div>
+        <button class="settings-btn" onclick="loadSaved();closeModal('settingsModalBg')">読み込む</button>
+      </div>
+
+      <div class="settings-item">
+        <div>
+          <div class="settings-label">チェックをリセット</div>
+          <div class="settings-sub">全員のチェックをクリア</div>
+        </div>
+        <button class="settings-btn danger" onclick="confirmReset();closeModal('settingsModalBg')">リセット</button>
+      </div>
+
+      <div class="modal-btns" style="margin-top:8px;">
+        <button class="modal-btn pri" onclick="closeModal('settingsModalBg')">閉じる</button>
+      </div>
+    </div>
+  </div>
+
+    <!-- Add item popup -->
   <div class="add-popup-bg" id="addPopupBg" onclick="closeAddPopup(event)">
     <div class="add-popup">
       <div class="add-popup-title" id="addPopupTitle">アイテムを追加</div>
@@ -240,9 +280,7 @@ body{font-family:'Outfit',sans-serif;background:var(--bg);color:var(--text);font
   </div>
 
   <div class="bottom-bar">
-    <button class="bb-btn danger" onclick="confirmReset()">リセット</button>
-    <button class="bb-btn" onclick="loadSaved()">前回読込</button>
-    <button class="bb-btn pri" onclick="saveAll()">保存</button>
+    <button class="bb-btn" onclick="saveAll()">保存</button>
   </div>
 </div>
 
@@ -365,10 +403,7 @@ function persist(){
   isSaved=true;updateSave();
 }
 function markUnsaved(){isSaved=false;updateSave();}
-function updateSave(){
-  document.getElementById('saveDot').className='save-dot'+(isSaved?' saved':'');
-  document.getElementById('saveTxt').textContent=isSaved?'保存済み':'未保存';
-}
+function updateSave(){}
 
 function getCats(mi){
   const tmpl=TRIP_TMPL[trip]||TRIP_TMPL['旅行'];
@@ -391,11 +426,12 @@ function getDefLen(mi,cat){
 }
 
 function setTrip(t){trip=t;load();markUnsaved();render();}
-function changeDays(d){days=Math.max(1,Math.min(30,days+d));document.getElementById('daysNum').textContent=days;markUnsaved();renderPanel();}
+function changeDays(d){days=Math.max(1,Math.min(30,days+d));document.querySelectorAll('#daysNum').forEach(el=>el.textContent=days);markUnsaved();renderPanel();}
 function setMember(i){active=i;render();}
 
 function renderTripTabs(){
-  document.getElementById('tripScroll').innerHTML=trips.map(t=>
+  const sl=document.getElementById('settingsTripList');
+  if(sl)sl.innerHTML=trips.map(t=>
     `<button class="trip-pill${t===trip?' on':''}" onclick="setTrip('${t}')">${t}</button>`
   ).join('');
 }
@@ -454,21 +490,17 @@ function renderPanel(){
     const startGi=gi;
     const doneCnt=items.filter((_,ii)=>checks[active+'_'+trip+'_'+(startGi+ii)]).length;
     const colKey=active+'_'+trip+'_'+cat;
-    const isOpen=collapsed[colKey]!==false;
     const allDone=items.length>0&&doneCnt===items.length;
     const st=catStyle(cat,ci);
     h+=`<div class="cat-card">
-      <div class="cat-hdr" onclick="toggleCat('${colKey}')">
+      <div class="cat-hdr">
         <div class="cat-icon ${st.cls}">${st.icon}</div>
         <div class="cat-info">
           <div class="cat-name">${cat}</div>
-          <div class="cat-sub">${items.length}項目</div>
         </div>
-        <span class="cat-badge ${allDone?'done':'todo'}">${doneCnt}/${items.length}</span>
         <button class="cat-add-btn" onclick="event.stopPropagation();openAddPopup(${active},'${cat}')">+</button>
-        <span class="cat-chevron${isOpen?' open':''}">▶</span>
       </div>`;
-    if(isOpen){
+    {
       const pending=[],done=[];
       items.forEach((item,ii)=>{
         const gIdx=startGi+ii;
@@ -485,7 +517,7 @@ function renderPanel(){
       }
       h+=`</div>`;
       gi+=items.length;
-    } else {gi+=items.length;}
+    }
     h+=`</div>`;
   });
   document.getElementById('scrollArea').innerHTML=h;
@@ -507,7 +539,7 @@ function itemHTML(mi,cat,ii,gIdx,isDone,item){
   const qty=item.qty?(days+1)+'枚':'';
   return `<div class="item-row${isDone?' done':''}" data-mi="${mi}" data-cat="${cat}" data-ii="${ii}" data-def="${isDefault}" onclick="toggle(${mi},${gIdx})">
     <div class="chk"><span class="chk-mark">✓</span></div>
-    <div class="item-body">
+    <div class="item-body" style="display:flex;align-items:baseline;gap:6px;">
       <div class="item-text">${item.l}</div>
       ${qty?`<div class="item-qty">${qty}</div>`:''}
     </div>
@@ -635,6 +667,7 @@ function closeCtx(){document.getElementById('ctxMenu').classList.remove('show');
 function ctxDel(){closeCtx();if(ctxMi>=0)delItem(ctxMi,ctxCat,ctxIi);}
 
 let addPopupMi=-1, addPopupCat='';
+function openSettingsModal(){document.getElementById('settingsModalBg').classList.add('show');}
 
 function openAddPopup(mi, cat){
   addPopupMi=mi; addPopupCat=cat;
